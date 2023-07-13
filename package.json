@@ -1,0 +1,28 @@
+{
+  "name": "test-node-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon --files backend/app.ts",
+    "client": "npm run start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \" npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.0.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.1",
+    "prettier": "2.8.8",
+    "typescript": "^5.1.5"
+  }
+}
