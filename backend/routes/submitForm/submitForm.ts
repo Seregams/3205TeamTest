@@ -17,7 +17,6 @@ router.post(
   async (req: Request, res: Response) => {
     try {
       const validErrors = validationResult(req);
-      console.log(validErrors);
       if (!validErrors.isEmpty()) {
         return res.status(400).json({
           errors: validErrors.array(),
@@ -25,7 +24,6 @@ router.post(
         });
       }
       const { email, number }: formData = req.body;
-      console.log("VALIDATION OK", email, number);
       const result = dbData.filter(function (el) {
         if (number) {
           const normNum = number.replace(/-/g, "");

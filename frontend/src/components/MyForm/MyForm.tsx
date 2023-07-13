@@ -17,16 +17,16 @@ const MyForm: FC<FormProps> = ({
   };
   return (
     <div className="w-full py-3">
-      <div className="bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+      <div className="bg-gray-200 rounded-lg shadow">
         <div className="px-6 py-6 lg:px-16">
-          <h3 className="mb-4 text-xl font-medium text-gray-900 dark:text-white">
+          <h3 className="mb-4 text-xl font-medium text-gray-900">
             {title}
           </h3>
           <form className="space-y-6" onSubmit={submit}>
             <div>
               <label
                 htmlFor="email"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                className="block mb-2 text-sm font-medium text-gray-900"
               >
                 {firstLabel}
               </label>
@@ -37,8 +37,7 @@ const MyForm: FC<FormProps> = ({
                 value={data.email}
                 onChange={handleChange}
                 className="bg-gray-50 border border-gray-300 text-gray-900 focus-visible:outline-none text-sm rounded-lg
-                            focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600
-                             dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                            focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 placeholder="name@company.com"
                 required
               />
@@ -46,14 +45,13 @@ const MyForm: FC<FormProps> = ({
             <div>
               <label
                 htmlFor="password"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                className="block mb-2 text-sm font-medium text-gray-900"
               >
                 {secondLabel}
               </label>
               <InputMask
                 className="bg-gray-50 border border-gray-300 text-gray-900 focus-visible:outline-none text-sm rounded-lg
-                    focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500
-                    dark:placeholder-gray-400 dark:text-white"
+                    focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 id="number"
                 name="number"
                 type="text"
@@ -65,8 +63,7 @@ const MyForm: FC<FormProps> = ({
             <button
               type="submit"
               className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none
-                          focus:ring-blue-300 focus-visible:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600
-                          dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                          focus:ring-blue-300 focus-visible:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center"
             >
               {btnLabel}
             </button>
