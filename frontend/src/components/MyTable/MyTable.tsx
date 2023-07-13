@@ -25,7 +25,7 @@ const MyTable: FC<Values> = ({ data }) => {
               {data.map((item, index) => (
                 <tr
                   key={item.email + index}
-                  className="bg-gray-200 border-b dark:bg-gray-800"
+                  className="bg-gray-200 border-b"
                 >
                   <th
                     scope="row"
