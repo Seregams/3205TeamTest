@@ -15,11 +15,11 @@
 ```command
   npm install
 ```
-#### create config.ts in /backend and you have to write there:
+#### Create config.ts in /backend and you have to write there:
 ```command
   PORT = {YOUR PORT}  "default: 4000"
 ```
-#### if you changed the port go to /frontend/setupProxy.js and change the port value to your own.
+#### If you changed the port go to /frontend/setupProxy.js and change the port value to your own.
 ```command
   createProxyMiddleware({
       target: "http://localhost:{YOUR PORT}",
